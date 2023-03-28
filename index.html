@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TareaIA</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+
+    <h1>Convertir Unidades</h1>
+
+    <div class="container">
+        <select id="conversion">
+          <option selected>¿Que Desea Convertir?</option>
+          <option value="conversion-lb-kg">Convertir Libras a Kilogramos</option>
+          <option value="conversion-m-km">Convertir Metros a Kilometros</option>
+          <option value="conversion-años-dias">Convertir Años a Dias</option>
+        </select>
+        
+        <div id="conversion-lb-kg" class="conversion" style="display: none;">
+          <input type="number" id="libras" placeholder="Convertir libras a kilogramos">
+          <h2 id="r"></h2>
+          <button onclick="Libras()">Convertir</button>        
+        </div>
+        
+        <div id="conversion-m-km" class="conversion" style="display: none;">
+          <input type="number" id="metros" placeholder="Convertir metros a kilometros">
+          <h2 id="r2"></h2>
+          <button onclick="Metros()">Convertir</button> 
+        </div>
+        
+        <div id="conversion-años-dias" class="conversion" style="display: none;">
+          <input type="number" id="Años" placeholder="Convertir años a dias">
+          <h2 id="r3"></h2>
+          <button onclick="Años()">Convertir</button> 
+        </div>
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="/app.js"></script>
+
+
+
+</html>
